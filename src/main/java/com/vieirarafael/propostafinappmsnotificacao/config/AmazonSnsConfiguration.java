@@ -12,14 +12,15 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AmazonSnsConfiguration {
-    @Value( "${amazon.sns.access-key}")
+    @Value( "${aws.sns.access-key}")
     private String accessKey;
-    @Value( "${amazon.sns.secret-key}")
+    @Value( "${aws.sns.secret-key}")
     private String secretKey;
     @Bean
     public AWSCredentials getAWSCredentials() {
         return new BasicAWSCredentials(accessKey, secretKey);
     }
+    @Bean
     public AmazonSNS amazonSNS(){
         return AmazonSNSClientBuilder.standard()
                 .withCredentials(new AWSStaticCredentialsProvider(getAWSCredentials()))
