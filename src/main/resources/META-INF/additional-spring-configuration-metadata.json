@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "rabbitmq.queue.proposta.pendente",
+      "type": "java.lang.String",
+      "description": "Define a fila de propostas pendentes para o micro serviço de notificação."
+  }
+] }

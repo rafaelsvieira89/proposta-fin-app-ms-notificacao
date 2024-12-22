@@ -6,3 +6,7 @@ spring:
     port: 5672
     username: guest
     password: guest
+rabbitmq:
+  queue:
+    proposta:
+      pendente: proposta-pendente.ms-notificacao
