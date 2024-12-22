@@ -17,6 +17,6 @@ public class PropostaPendenteListener {
     public void propostaPendente(Proposta proposta) {
         var mensagem = MensagemConstante.PROPOSTA_EM_ANALISE.formatted(proposta.getUsuario().getNome());
         log.info(mensagem);
-        notificacaoSnsService.notificar(mensagem);
+        notificacaoSnsService.notificar(proposta.getUsuario().getTelefone(), mensagem);
     }
 }
