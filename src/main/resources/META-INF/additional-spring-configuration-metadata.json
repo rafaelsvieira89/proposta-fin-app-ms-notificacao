@@ -4,5 +4,15 @@
       "name": "rabbitmq.queue.proposta.pendente",
       "type": "java.lang.String",
       "description": "Define a fila de propostas pendentes para o micro serviço de notificação."
-  }
-] }
+    },
+    {
+      "name": "aws.sns.secret-key",
+      "type": "java.lang.String",
+      "description": "Description for aws.sns.secret-key."
+    },
+    {
+      "name": "aws.sns.access-key",
+      "type": "java.lang.String",
+      "description": "Description for aws.sns.access-key."
+    }
+  ] }

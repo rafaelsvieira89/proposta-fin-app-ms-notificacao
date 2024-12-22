@@ -10,3 +10,7 @@ rabbitmq:
   queue:
     proposta:
       pendente: proposta-pendente.ms-notificacao
+aws:
+  sns:
+    access-key: ${AWS_SNS_ACCESS_KEY}
+    secret-key: ${AWS_SNS_SECRET_KEY}
