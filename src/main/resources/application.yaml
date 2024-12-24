@@ -14,3 +14,8 @@ aws:
   sns:
     access-key: ${AWS_SNS_ACCESS_KEY}
     secret-key: ${AWS_SNS_SECRET_KEY}
+#Zipkin
+management:
+  tracing:
+    sampling:
+      probability: 1.0
